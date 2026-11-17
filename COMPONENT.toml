@@ -3,7 +3,7 @@ name = "SigmaOS-media-codecs"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "media-codecs component"
+description = "Media codec support: GStreamer plugins, FFmpeg, hardware decode, codec licensing"
 upstream = []
 
 [contract]
