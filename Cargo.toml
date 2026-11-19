@@ -1,0 +1,15 @@
+[package]
+name = "SigmaOS-media-codecs"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS media_codecs component"
+
+[lib]
+name = "media_codecs"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1"
+
+[dev-dependencies]
