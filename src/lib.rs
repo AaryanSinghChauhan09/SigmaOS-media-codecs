@@ -2,6 +2,9 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+/// Multimedia codec manager: registration, conversion, processing.
+pub mod sigmacodec;
+
 use thiserror::Error;
 
 /// Error types for this component.
