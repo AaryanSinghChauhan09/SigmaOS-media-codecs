@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-media-codecs Component Wiki
+# SigmaOS-media-codecs Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-media-codecs provides Media codec support: GStreamer plugins, FFmpeg, hardware decode, codec licensing for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-media-codecs provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-media-codecs Abstraction
-- Fail-Fast on SigmaOS-media-codecs Initialization Errors
-- Deterministic SigmaOS-media-codecs Setup
-- Clear Abstraction Over SigmaOS-media-codecs APIs
-- Composition over Inheritance for SigmaOS-media-codecs extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-media-codecs Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-media-codecs Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-media-codecs Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-media-codecs APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-media-codecs extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-media-codecs follows a SigmaOS-media-codecs pattern:
+SigmaOS-media-codecs follows a SigmaOS-media-codecs pattern:
 - **SigmaOS-media-codecs Core**: Provides SigmaOS-media-codecs support, SigmaOS-media-codecs management, and SigmaOS-media-codecs tracking
 - **Management**: Supports SigmaOS-media-codecs management, SigmaOS-media-codecs configuration, and SigmaOS-media-codecs lifecycle
 - **Tracking**: Supports SigmaOS-media-codecs status, SigmaOS-media-codecs tracking, and SigmaOS-media-codecs lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-media-codecs follows a SigmaOS-media-codecs pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-media-codecs by given configuration
--  - Register a SigmaOS-media-codecs by given name
--  - Get SigmaOS-media-codecs status and SigmaOS-media-codecs availability
--  - Track SigmaOS-media-codecs management and SigmaOS-media-codecs tracking
+- Manage a SigmaOS-media-codecs by given configuration
+- Register a SigmaOS-media-codecs by given name
+- Get SigmaOS-media-codecs status and SigmaOS-media-codecs availability
+- Track SigmaOS-media-codecs management and SigmaOS-media-codecs tracking
 - Error types for SigmaOS-media-codecs failure scenarios or unsupported SigmaOS-media-codecs types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-media-codecs init, SigmaOS-media-codecs management)
 3. **Assert**: Verify the expected SigmaOS-media-codecs results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-media-codecs initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-media-codecs failure scenarios
 - Unit tests provided for SigmaOS-media-codecs management and configuration
